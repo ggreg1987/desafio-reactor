@@ -29,6 +29,17 @@ public class App {
 
         System.out.println("======================================");
 
+        System.out.println("3) Verifica se o usuário passado é valido, caso seja retorna void,\n caso contrário deve disparar uma exception" +
+                "    (para esse desafio vamos considerar que \n o usário é valido quando ele tem uma senha com mais de 8 caractéres)");
+
+        Question3 q3Test1 = new Question3();
+        q3Test1.userIsValid(user1)
+                .subscribe();
+
+//        Question3 q3Test2 = new Question3();
+//        q3Test2.userIsValid(user2)
+//                .subscribe();
+
 
     }
 }
