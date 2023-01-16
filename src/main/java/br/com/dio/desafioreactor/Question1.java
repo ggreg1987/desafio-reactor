@@ -12,7 +12,8 @@ public class Question1 {
      */
     public Flux<Long> inc(final List<Long> numbers){
         return Flux.fromIterable(numbers)
-                .map(n -> n + 1);
+                .map(n -> n + 1)
+                .doOnNext(System.out::println);
 
     }
 }
